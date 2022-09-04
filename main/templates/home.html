@@ -9,11 +9,21 @@
   <input name="subbutton" id="subbutton" class="btn btn-primary" type="button" value="sub">
   <input name="multbutton" id="multbutton" class="btn btn-primary" type="button" value="mult">
   <input name="divbutton" id="divbutton" class="btn btn-primary" type="button" value="div"> {% endcomment %}
+
+
   <form method="post" action="add">
     {% csrf_token %}
-    <label>Enter the number</label>
-    <input type="text" name="search">
-    <button type="submit">ADD</button>
+    <label>Enter the number 1</label>
+    <input type="text" name="a"> <br>
+    <label>Enter the  operator </label>
+    <input type="text" name="s"> <br>
+    <label>Enter the number 2</label>
+    <input type="text" name="b">
+    <div align="center">
+      <br>
+      <button class="calculate" type="submit" >Calculate</button>
+    </div>
+    <br>
     
 </form>
 
@@ -22,4 +32,6 @@
 </div>
 
 </div>
+ <br> <br> <BR>
+
 {% endblock %}
