@@ -1,0 +1,25 @@
+{% extends 'theme.html' %}
+
+{% block content %}
+<div class="whole" >
+
+{% comment %} <h1 class="heading1" <i class="fa fa-align-center" aria-hidden="true"></i> Select from these operations </h1> {% endcomment %}
+{% comment %} <div class="form-group">
+  <input name="addbutton" id="addbutton" class="btn btn-primary" type="button" value="add">
+  <input name="subbutton" id="subbutton" class="btn btn-primary" type="button" value="sub">
+  <input name="multbutton" id="multbutton" class="btn btn-primary" type="button" value="mult">
+  <input name="divbutton" id="divbutton" class="btn btn-primary" type="button" value="div"> {% endcomment %}
+  <form method="post" action="add">
+    {% csrf_token %}
+    <label>Enter the number</label>
+    <input type="text" name="search">
+    <button type="submit">ADD</button>
+    
+</form>
+
+
+
+</div>
+
+</div>
+{% endblock %}
